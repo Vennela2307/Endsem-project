@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>SpeedyFoodie - Online Food Delivery</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVIGATION BAR
+    ========================== -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🍔 SpeedyFoodie
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="restaurants.html">
+                Restaurants
+            </a>
+
+            <a href="cart.html">
+                Cart 🛒
+            </a>
+
+            <a href="login.html">
+                Login
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="welcome-text">
+                WELCOME TO SPEEDYFOODIE
+            </p>
+
+            <h1>
+                Delicious Food <br>
+                <span>Delivered To You.</span>
+            </h1>
+
+            <p class="hero-description">
+                Discover the best restaurants around you and get your favourite meals delivered right to your doorstep.
+            </p>
+
+            <a href="restaurants.html" class="hero-button">
+                Explore Restaurants →
+            </a>
+
+        </div>
+
+        <div class="hero-food">
+
+            <div class="food-circle">
+                🍕
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOD CATEGORIES
+    ========================== -->
+
+    <section class="categories">
+
+        <p class="section-title">
+            EXPLORE
+        </p>
+
+        <h2>
+            What are you craving?
+        </h2>
+
+        <div class="category-container">
+
+            <!-- Pizza -->
+
+            <div class="category-card"
+                 onclick="openCategory('pizza')">
+
+                <div class="category-icon">
+                    🍕
+                </div>
+
+                <h3>
+                    Pizza
+                </h3>
+
+                <p>
+                    Cheesy & delicious
+                </p>
+
+            </div>
+
+
+            <!-- Burgers -->
+
+            <div class="category-card"
+                 onclick="openCategory('burger')">
+
+                <div class="category-icon">
+                    🍔
+                </div>
+
+                <h3>
+                    Burgers
+                </h3>
+
+                <p>
+                    Juicy & tasty
+                </p>
+
+            </div>
+
+
+            <!-- Indian -->
+
+            <div class="category-card"
+                 onclick="openCategory('indian')">
+
+                <div class="category-icon">
+                    🍛
+                </div>
+
+                <h3>
+                    Indian
+                </h3>
+
+                <p>
+                    Rich & flavorful
+                </p>
+
+            </div>
+
+
+            <!-- Chinese -->
+
+            <div class="category-card"
+                 onclick="openCategory('chinese')">
+
+                <div class="category-icon">
+                    🍜
+                </div>
+
+                <h3>
+                    Chinese
+                </h3>
+
+                <p>
+                    Hot & delicious
+                </p>
+
+            </div>
+
+
+            <!-- Desserts -->
+
+            <div class="category-card"
+                 onclick="openCategory('dessert')">
+
+                <div class="category-icon">
+                    🍰
+                </div>
+
+                <h3>
+                    Desserts
+                </h3>
+
+                <p>
+                    Sweet treats
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SMART FOOD SUGGESTIONS
+    ========================== -->
+
+    <section class="smart-suggestions">
+
+        <p class="section-title">
+            SMART PICKS
+        </p>
+
+        <h2>
+            🧠 Recommended For You
+        </h2>
+
+        <p>
+            Based on your previous orders
+        </p>
+
+        <div id="suggestionContainer"
+             class="suggestion-container">
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         WHY SPEEDYFOODIE
+    ========================== -->
+
+    <section class="why-foodie">
+
+        <p class="section-title">
+            WHY SPEEDYFOODIE?
+        </p>
+
+        <h2>
+            Food made easy.
+        </h2>
+
+        <div class="features">
+
+            <!-- Fast Delivery -->
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🚀
+                </div>
+
+                <h3>
+                    Fast Delivery
+                </h3>
+
+                <p>
+                    Get your favourite food delivered quickly.
+                </p>
+
+            </div>
+
+
+            <!-- Restaurants -->
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🍽️
+                </div>
+
+                <h3>
+                    Best Restaurants
+                </h3>
+
+                <p>
+                    Choose from a wide variety of restaurants.
+                </p>
+
+            </div>
+
+
+            <!-- Payment -->
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    💳
+                </div>
+
+                <h3>
+                    Easy Payment
+                </h3>
+
+                <p>
+                    Simple and convenient checkout experience.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div>
+
+            <h3>
+                🍔 SpeedyFoodie
+            </h3>
+
+            <p>
+                Your favourite food, delivered to your doorstep.
+            </p>
+
+        </div>
+
+        <p>
+            © 2026 SpeedyFoodie. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeedyFoodie - Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">SpeedyFoodie</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="restaurants.html">Restaurants</a>
+            <a href="cart.html">Cart</a>
+            <a href="checkout.html" class="active">Checkout</a>
+            <a href="#" id="logoutBtn">Logout</a>
+        </nav>
+    </header>
+
+    <main class="checkout-container">
+
+        <h1>Checkout</h1>
+
+        <div class="checkout-content">
+
+            <section class="checkout-form">
+
+                <h2>Delivery Details</h2>
+
+                <form id="checkoutForm">
+
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            placeholder="Enter your full name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter your phone number"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Delivery Address</label>
+                        <textarea
+                            id="address"
+                            name="address"
+                            rows="4"
+                            placeholder="Enter your complete delivery address"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input
+                            type="text"
+                            id="city"
+                            name="city"
+                            placeholder="Enter your city"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pincode">Pincode</label>
+                        <input
+                            type="text"
+                            id="pincode"
+                            name="pincode"
+                            placeholder="Enter pincode"
+                            required
+                        >
+                    </div>
+
+                    <h2>Delivery Schedule</h2>
+
+                    <div class="form-group">
+                        <label for="deliveryDate">Delivery Date</label>
+                        <input
+                            type="date"
+                            id="deliveryDate"
+                            name="deliveryDate"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="deliveryTime">Delivery Time</label>
+                        <select id="deliveryTime" name="deliveryTime" required>
+                            <option value="">Select delivery time</option>
+                            <option value="10:00 AM - 11:00 AM">10:00 AM - 11:00 AM</option>
+                            <option value="11:00 AM - 12:00 PM">11:00 AM - 12:00 PM</option>
+                            <option value="12:00 PM - 1:00 PM">12:00 PM - 1:00 PM</option>
+                            <option value="1:00 PM - 2:00 PM">1:00 PM - 2:00 PM</option>
+                            <option value="2:00 PM - 3:00 PM">2:00 PM - 3:00 PM</option>
+                            <option value="6:00 PM - 7:00 PM">6:00 PM - 7:00 PM</option>
+                            <option value="7:00 PM - 8:00 PM">7:00 PM - 8:00 PM</option>
+                            <option value="8:00 PM - 9:00 PM">8:00 PM - 9:00 PM</option>
+                            <option value="9:00 PM - 10:00 PM">9:00 PM - 10:00 PM</option>
+                        </select>
+                    </div>
+
+                    <h2>Payment Method</h2>
+
+                    <div class="payment-options">
+
+                        <label class="payment-option">
+                            <input
+                                type="radio"
+                                name="paymentMethod"
+                                value="Cash on Delivery"
+                                required
+                            >
+                            <span>Cash on Delivery</span>
+                        </label>
+
+                        <label class="payment-option">
+                            <input
+                                type="radio"
+                                name="paymentMethod"
+                                value="UPI"
+                            >
+                            <span>UPI</span>
+                        </label>
+
+                        <label class="payment-option">
+                            <input
+                                type="radio"
+                                name="paymentMethod"
+                                value="Card"
+                            >
+                            <span>Credit / Debit Card</span>
+                        </label>
+
+                    </div>
+
+                    <!-- QR CODE PAYMENT SECTION -->
+                    <div
+                        id="qrPaymentSection"
+                        style="
+                            display: none;
+                            text-align: center;
+                            margin-top: 20px;
+                            padding: 20px;
+                            border: 2px solid #ddd;
+                            border-radius: 10px;
+                            background: white;
+                        "
+                    >
+
+                        <h3>Scan & Pay</h3>
+
+                        <p id="qrPaymentText">
+                            Scan the QR code using your UPI app to complete the payment.
+                        </p>
+
+                        <img
+                            src="qr-code.jpeg"
+                            alt="Payment QR Code"
+                            style="
+                                width: 220px;
+                                height: 220px;
+                                object-fit: contain;
+                                display: block;
+                                margin: 15px auto;
+                            "
+                        >
+
+                        <p>
+                            <strong>
+                                After completing the payment, click "Payment Done".
+                            </strong>
+                        </p>
+
+                        <button
+                            type="button"
+                            id="paymentDoneBtn"
+                            style="
+                                padding: 10px 20px;
+                                border: none;
+                                border-radius: 6px;
+                                cursor: pointer;
+                            "
+                        >
+                            Payment Done
+                        </button>
+
+                    </div>
+
+                    <button type="submit" class="place-order-btn">
+                        Place Order
+                    </button>
+
+                </form>
+
+            </section>
+
+            <section class="order-summary">
+
+                <h2>Order Summary</h2>
+
+                <div id="checkoutItems">
+                    <!-- Cart items will be displayed here using JavaScript -->
+                </div>
+
+                <div class="summary-details">
+
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span id="checkoutSubtotal">₹0</span>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Delivery Fee</span>
+                        <span id="checkoutDelivery">₹40</span>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Tax</span>
+                        <span id="checkoutTax">₹0</span>
+                    </div>
+
+                    <div class="summary-row total-row">
+                        <span>Total</span>
+                        <span id="checkoutTotal">₹0</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SpeedyFoodie. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- PAYMENT QR SCRIPT -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const paymentMethods = document.querySelectorAll(
+                'input[name="paymentMethod"]'
+            );
+
+            const qrPaymentSection = document.getElementById(
+                "qrPaymentSection"
+            );
+
+            const qrPaymentText = document.getElementById(
+                "qrPaymentText"
+            );
+
+            const paymentDoneBtn = document.getElementById(
+                "paymentDoneBtn"
+            );
+
+            paymentMethods.forEach(function (method) {
+
+                method.addEventListener("change", function () {
+
+                    if (this.value === "Cash on Delivery") {
+
+                        qrPaymentSection.style.display = "none";
+
+                    } else {
+
+                        qrPaymentSection.style.display = "block";
+
+                        if (this.value === "UPI") {
+
+                            qrPaymentText.textContent =
+                                "Scan the QR code using Google Pay, PhonePe, Paytm or any UPI app to complete the payment.";
+
+                        } else if (this.value === "Card") {
+
+                            qrPaymentText.textContent =
+                                "Scan the QR code to continue with your online payment.";
+
+                        }
+
+                    }
+
+                });
+
+            });
+
+            paymentDoneBtn.addEventListener("click", function () {
+
+                alert("Payment completed successfully!");
+
+            });
+
+        });
+    </script>
+
+</body>
+</html>

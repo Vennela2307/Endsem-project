@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>SpeedyFoodie - Restaurants</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVIGATION BAR
+    ========================== -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🍔 SpeedyFoodie
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="restaurants.html">
+                Restaurants
+            </a>
+
+            <a href="cart.html">
+                Cart 🛒
+            </a>
+
+            <a href="login.html">
+                Login
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================
+         RESTAURANTS HEADER
+    ========================== -->
+
+    <section class="restaurants-header">
+
+        <p class="section-title">
+            DISCOVER
+        </p>
+
+        <h1>
+            Find Your Favourite Restaurant
+        </h1>
+
+        <p>
+            Explore delicious food from the best restaurants around you.
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         SEARCH BAR
+    ========================== -->
+
+    <section class="restaurant-search">
+
+        <input
+            type="text"
+            id="restaurantSearch"
+            placeholder="Search restaurants..."
+        >
+
+        <button onclick="searchRestaurants()">
+            🔍 Search
+        </button>
+
+    </section>
+
+
+    <!-- =========================
+         RESTAURANT LIST
+    ========================== -->
+
+    <section class="restaurant-list">
+
+
+        <!-- RESTAURANT 1 -->
+
+        <div class="restaurant-card">
+
+            <div class="restaurant-image">
+                🍕
+            </div>
+
+            <div class="restaurant-info">
+
+                <h2>
+                    Pizza Palace
+                </h2>
+
+                <p class="restaurant-type">
+                    🍕 Italian • Pizza
+                </p>
+
+                <p>
+                    Delicious cheesy pizzas made with fresh ingredients.
+                </p>
+
+                <div class="restaurant-details">
+
+                    <span>
+                        ⭐ 4.5
+                    </span>
+
+                    <span>
+                        🕒 25-30 min
+                    </span>
+
+                </div>
+
+                <a href="menu.html"
+                   class="view-menu-button">
+                    View Menu →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- RESTAURANT 2 -->
+
+        <div class="restaurant-card">
+
+            <div class="restaurant-image">
+                🍔
+            </div>
+
+            <div class="restaurant-info">
+
+                <h2>
+                    Burger Hub
+                </h2>
+
+                <p class="restaurant-type">
+                    🍔 American • Burgers
+                </p>
+
+                <p>
+                    Juicy burgers, crispy fries and tasty combos.
+                </p>
+
+                <div class="restaurant-details">
+
+                    <span>
+                        ⭐ 4.6
+                    </span>
+
+                    <span>
+                        🕒 20-25 min
+                    </span>
+
+                </div>
+
+                <a href="menu.html"
+                   class="view-menu-button">
+                    View Menu →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- RESTAURANT 3 -->
+
+        <div class="restaurant-card">
+
+            <div class="restaurant-image">
+                🍛
+            </div>
+
+            <div class="restaurant-info">
+
+                <h2>
+                    Spice Garden
+                </h2>
+
+                <p class="restaurant-type">
+                    🍛 Indian • Biryani
+                </p>
+
+                <p>
+                    Authentic Indian dishes packed with rich flavours.
+                </p>
+
+                <div class="restaurant-details">
+
+                    <span>
+                        ⭐ 4.7
+                    </span>
+
+                    <span>
+                        🕒 30-35 min
+                    </span>
+
+                </div>
+
+                <a href="menu.html"
+                   class="view-menu-button">
+                    View Menu →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- RESTAURANT 4 -->
+
+        <div class="restaurant-card">
+
+            <div class="restaurant-image">
+                🍜
+            </div>
+
+            <div class="restaurant-info">
+
+                <h2>
+                    Dragon Bowl
+                </h2>
+
+                <p class="restaurant-type">
+                    🍜 Chinese • Noodles
+                </p>
+
+                <p>
+                    Hot noodles, fried rice and delicious Chinese dishes.
+                </p>
+
+                <div class="restaurant-details">
+
+                    <span>
+                        ⭐ 4.4
+                    </span>
+
+                    <span>
+                        🕒 25-30 min
+                    </span>
+
+                </div>
+
+                <a href="menu.html"
+                   class="view-menu-button">
+                    View Menu →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- RESTAURANT 5 -->
+
+        <div class="restaurant-card">
+
+            <div class="restaurant-image">
+                🍰
+            </div>
+
+            <div class="restaurant-info">
+
+                <h2>
+                    Sweet Treats
+                </h2>
+
+                <p class="restaurant-type">
+                    🍰 Desserts • Bakery
+                </p>
+
+                <p>
+                    Cakes, pastries and delicious sweet treats.
+                </p>
+
+                <div class="restaurant-details">
+
+                    <span>
+                        ⭐ 4.8
+                    </span>
+
+                    <span>
+                        🕒 15-20 min
+                    </span>
+
+                </div>
+
+                <a href="menu.html"
+                   class="view-menu-button">
+                    View Menu →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- RESTAURANT 6 -->
+
+        <div class="restaurant-card">
+
+            <div class="restaurant-image">
+                🍗
+            </div>
+
+            <div class="restaurant-info">
+
+                <h2>
+                    Grill House
+                </h2>
+
+                <p class="restaurant-type">
+                    🍗 Grill • Fast Food
+                </p>
+
+                <p>
+                    Delicious grilled dishes and crispy chicken.
+                </p>
+
+                <div class="restaurant-details">
+
+                    <span>
+                        ⭐ 4.5
+                    </span>
+
+                    <span>
+                        🕒 25-30 min
+                    </span>
+
+                </div>
+
+                <a href="menu.html"
+                   class="view-menu-button">
+                    View Menu →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div>
+
+            <h3>
+                🍔 SpeedyFoodie
+            </h3>
+
+            <p>
+                Your favourite food, delivered to your doorstep.
+            </p>
+
+        </div>
+
+        <p>
+            © 2026 SpeedyFoodie. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

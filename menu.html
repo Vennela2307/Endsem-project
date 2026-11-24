@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>SpeedyFoodie - Menu</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVIGATION BAR
+    ========================== -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🍔 SpeedyFoodie
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="restaurants.html">
+                Restaurants
+            </a>
+
+            <a href="cart.html">
+                Cart 🛒
+            </a>
+
+            <a href="login.html">
+                Login
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================
+         MENU HEADER
+    ========================== -->
+
+    <section class="menu-header">
+
+        <p class="section-title">
+            OUR MENU
+        </p>
+
+        <h1>
+            Delicious Food, Just For You
+        </h1>
+
+        <p>
+            Choose your favourite dishes and add them to your cart.
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         MENU FILTER
+    ========================== -->
+
+    <section class="menu-filter">
+
+        <button class="filter-button active"
+                data-category="all">
+            All
+        </button>
+
+        <button class="filter-button"
+                data-category="pizza">
+            🍕 Pizza
+        </button>
+
+        <button class="filter-button"
+                data-category="burger">
+            🍔 Burgers
+        </button>
+
+        <button class="filter-button"
+                data-category="indian">
+            🍛 Indian
+        </button>
+
+        <button class="filter-button"
+                data-category="chinese">
+            🍜 Chinese
+        </button>
+
+        <button class="filter-button"
+                data-category="dessert">
+            🍰 Desserts
+        </button>
+
+    </section>
+
+
+    <!-- =========================
+         MENU ITEMS
+    ========================== -->
+
+    <section class="menu-container">
+
+
+        <!-- ================= ITEM 1 ================= -->
+
+        <div class="menu-card"
+             data-category="pizza">
+
+            <div class="menu-image">
+                🍕
+            </div>
+
+            <div class="menu-info">
+
+                <h2>
+                    Margherita Pizza
+                </h2>
+
+                <p>
+                    Classic pizza with fresh tomatoes, mozzarella and basil.
+                </p>
+
+                <div class="menu-bottom">
+
+                    <span class="price">
+                        ₹249
+                    </span>
+
+                    <button class="add-cart-button"
+                            onclick="addToCart('Margherita Pizza', 249)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= ITEM 2 ================= -->
+
+        <div class="menu-card"
+             data-category="burger">
+
+            <div class="menu-image">
+                🍔
+            </div>
+
+            <div class="menu-info">
+
+                <h2>
+                    Classic Chicken Burger
+                </h2>
+
+                <p>
+                    Crispy chicken patty with lettuce, cheese and special sauce.
+                </p>
+
+                <div class="menu-bottom">
+
+                    <span class="price">
+                        ₹199
+                    </span>
+
+                    <button class="add-cart-button"
+                            onclick="addToCart('Classic Chicken Burger', 199)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= ITEM 3 ================= -->
+
+        <div class="menu-card"
+             data-category="indian">
+
+            <div class="menu-image">
+                🍛
+            </div>
+
+            <div class="menu-info">
+
+                <h2>
+                    Chicken Biryani
+                </h2>
+
+                <p>
+                    Aromatic basmati rice cooked with tender chicken and Indian spices.
+                </p>
+
+                <div class="menu-bottom">
+
+                    <span class="price">
+                        ₹299
+                    </span>
+
+                    <button class="add-cart-button"
+                            onclick="addToCart('Chicken Biryani', 299)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= ITEM 4 ================= -->
+
+        <div class="menu-card"
+             data-category="chinese">
+
+            <div class="menu-image">
+                🍜
+            </div>
+
+            <div class="menu-info">
+
+                <h2>
+                    Veg Hakka Noodles
+                </h2>
+
+                <p>
+                    Stir-fried noodles with fresh vegetables and delicious sauces.
+                </p>
+
+                <div class="menu-bottom">
+
+                    <span class="price">
+                        ₹179
+                    </span>
+
+                    <button class="add-cart-button"
+                            onclick="addToCart('Veg Hakka Noodles', 179)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= ITEM 5 ================= -->
+
+        <div class="menu-card"
+             data-category="indian">
+
+            <div class="menu-image">
+                🍗
+            </div>
+
+            <div class="menu-info">
+
+                <h2>
+                    Grilled Chicken
+                </h2>
+
+                <p>
+                    Juicy grilled chicken seasoned with herbs and special spices.
+                </p>
+
+                <div class="menu-bottom">
+
+                    <span class="price">
+                        ₹279
+                    </span>
+
+                    <button class="add-cart-button"
+                            onclick="addToCart('Grilled Chicken', 279)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= ITEM 6 ================= -->
+
+        <div class="menu-card"
+             data-category="dessert">
+
+            <div class="menu-image">
+                🍰
+            </div>
+
+            <div class="menu-info">
+
+                <h2>
+                    Chocolate Cake
+                </h2>
+
+                <p>
+                    Soft and creamy chocolate cake perfect for dessert lovers.
+                </p>
+
+                <div class="menu-bottom">
+
+                    <span class="price">
+                        ₹149
+                    </span>
+
+                    <button class="add-cart-button"
+                            onclick="addToCart('Chocolate Cake', 149)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div>
+
+            <h3>
+                🍔 SpeedyFoodie
+            </h3>
+
+            <p>
+                Your favourite food, delivered to your doorstep.
+            </p>
+
+        </div>
+
+        <p>
+            © 2026 SpeedyFoodie. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
